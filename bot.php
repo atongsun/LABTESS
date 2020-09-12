@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
                 'text' => $text,
             ];
             // Make a POST Request to Messaging API to reply to sender
-            $url = 'https://api.line.me/v2/bot/message/reply';
+           // $url = 'https://api.line.me/v2/bot/message/reply';
             $data = [
                 'replyToken' => $replyToken,
                 'messages' => [$messages]
