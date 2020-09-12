@@ -68,7 +68,7 @@
           ){
             $text = $text." คุณ ".$Name."\n สามารถเลือกเมนูได้เลยครับ ";
           }elseif($text == "1"){
-            $text = "Temperature(อุณหภูมิ)ตอนนี้จะอยู่ที่ ".$Temperature." (°C) ครับ";
+            $text = "GSOP ".$Temperature."Global Standard Operation Pro ครับ";
           }elseif ($text == "2"){
             $text = "Pressure(ความดัน)ตอนนี้จะอยู่ที่ ".$Pressure." (°Pa) ครับ";
           }elseif ($text == "3"){
@@ -83,8 +83,8 @@
             - ความสูงจากระดับน้ำทะเล ตอนนี้จะอยู่ที่ ".$Approx." (°C) ครับ\n 
             - ความชื้น ตอนนี้จะอยู่ที่ ".$Humidity." (°F) ครับ\n 
             - อับเดจล่าสุดเมื่อวันที่ ".$datetime." ครับ";
-          }else if($text == "ใครสร้าง Mark I"){
-            $text ="Mark I ถูกสร้างโดย Mr.Apichaya ครับ";
+          }else if($text == "ใครสร้าง bot"){
+            $text ="bot ถูกสร้างโดย Mr.Apichaya ครับ";
           }else{
             $text = "ขอเวลาเรียนรู้ก่อนนะครับ :)";
           }
