@@ -1,6 +1,6 @@
 <?php
-  $access_token = "/1H2Ob/D5/sXjHapP8eNz9WdUVcXnZcFhJcX9BLul3HK9bums95y9oJM315Js+v5BnPLSPHR8DzXLw/ME2cTWm6RDF1aCNyMiUpwvUec4WyPuAc71zWMl+Qy1iIaiHLTEE5TgVO7eZ+reDwt1dIt1QdB04t89/1O/w1cDnyilFU=";
-  $userId ='U09daf41b2443adfdfcbdfc3b3858f3eb';
+  $access_token = "/mTngjhSU2HvRPX7ahDdh2bUqXnrUQm8c0/7xqzHDyqqRvrcIz0FWw3DP45ZdDX1doo2duDWHHBlzDWX52IoDeG6hvOogLkdznP5pLUT7oRfy8XcCfkmvN7TSpV41xHsezQjdg8UVQrV4rgQJME3XAdB04t89/1O/w1cDnyilFU=";
+  $userId ='U809935630e48e39491a68bea8dd7b88f';
 
   // Call LINE API
   $content = file_get_contents('php://input');
@@ -84,7 +84,7 @@
             - ความชื้น ตอนนี้จะอยู่ที่ ".$Humidity." (°F) ครับ\n 
             - อับเดจล่าสุดเมื่อวันที่ ".$datetime." ครับ";
           }else if($text == "ใครสร้าง Mark I"){
-            $text ="Mark I ถูกสร้างโดย mr.mach ครับ";
+            $text ="Mark I ถูกสร้างโดย Mr.Apichaya ครับ";
           }else{
             $text = "ขอเวลาเรียนรู้ก่อนนะครับ :)";
           }
