@@ -1,7 +1,6 @@
 <?php
 
-  $strAccessToken = "+t5E3u2f0eW3JKhGPyKqGX4M1M6uuvErtuexSZn6D3017/ONS2n+Nqc3KjF37A0K4tv3QZ0BD6kyrzoCXmKa+L2ys817BnmeTwqXPujiaX9+yEpjMBxT2OH60T4W41rZXsUqJ6QidfaesO3AOAb93wdB04t89/1O/w1cDnyilFU=";
-  
+  $strAccessToken = "/mTngjhSU2HvRPX7ahDdh2bUqXnrUQm8c0/7xqzHDyqqRvrcIz0FWw3DP45ZdDX1doo2duDWHHBlzDWX52IoDeG6hvOogLkdznP5pLUT7oRfy8XcCfkmvN7TSpV41xHsezQjdg8UVQrV4rgQJME3XAdB04t89/1O/w1cDnyilFU="
   $content = file_get_contents('php://input');
   $arrJson = json_decode($content, true);
 
@@ -19,11 +18,11 @@
   $data = json_decode($json);
   $isData=sizeof($data);
 
-  if (strpos($_msg, 'H.E.L.E.N') !== false) 
+  if (strpos($_msg, 'DutyBilling') !== false) 
   {
-    if (strpos($_msg, 'H.E.L.E.N') !== false) 
+    if (strpos($_msg, 'DutyBilling') !== false) 
     {
-      $x_tra = str_replace("H.E.L.E.N","", $_msg);
+      $x_tra = str_replace("DutyBilling","", $_msg);
       $pieces = explode("|", $x_tra);
       $_question=str_replace("[","",$pieces[0]);
       $_answer=str_replace("]","",$pieces[1]);
@@ -64,7 +63,7 @@
         $arrPostData = array();
         $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
         $arrPostData['messages'][0]['type'] = "text";
-        $arrPostData['messages'][0]['text'] = 'H.E.L.E.N คุณสามารถสอนให้ฉันฉลาดได้เพียงพิมพ์: H.E.L.E.N[คำถาม|คำตอบ]';
+        $arrPostData['messages'][0]['text'] = 'H.E.L.E.N คุณสามารถสอนให้ฉันฉลาดได้เพียงพิมพ์: DutyBilling[คำถาม|คำตอบ]';
     }
   }
 
