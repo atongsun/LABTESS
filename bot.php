@@ -4,6 +4,13 @@ $access_token = 'bfXiwvkh+OF2HxyedP+JaR2oN4zdW9DxoouWWGMPUGrUfGOyE4O6HYPphnq29fc
 $content = file_get_contents('php://input');
 $datas = file_get_contents('php://input');
 $deCode = json_decode($datas,true);
+function getFormatTextMessage($text)
+{
+   $datas = [];
+   $datas['type'] = 'text';
+   $datas['text'] = $text;
+   return $datas;
+}
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
