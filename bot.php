@@ -1,5 +1,5 @@
 <?php
-$access_token = 'bfXiwvkh+OF2HxyedP+JaR2oN4zdW9DxoouWWGMPUGrUfGOyE4O6HYPphnq29fcKTi6yoAekB6wArOWs7M4IVlHKmJHsdkiawb/i5NYOvaBYlEeeB8x7t6WQ0Q3q7+wJUJ6w2FszRr3RMlOm8XHAmAdB04t89/1O/w1cDnyilFU=';
+$access_token = 'YNaUBbZTQCWSKVdEX6h++Ra6Crk88ARJAkcG7aIbIbGzHEXW4kueP66l774Ce9ONGl/V2JefnJ3+kxD95ZeWeNPUxhGbb4Z+sd7MyMwNlOrqRO7nd7fs1m1Umct4GXFaCrna3nHu02PDpmrbclCg8AdB04t89/1O/w1cDnyilFU=';
 // Get POST body content
 $content = file_get_contents('php://input');
 $datas = file_get_contents('php://input');
@@ -53,7 +53,7 @@ $messages['replyToken'] = $replyToken;
 $messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้");
 $encodeJson = json_encode($messages);
 $LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
-$LINEDatas['token'] = "'bfXiwvkh+OF2HxyedP+JaR2oN4zdW9DxoouWWGMPUGrUfGOyE4O6HYPphnq29fcKTi6yoAekB6wArOWs7M4IVlHKmJHsdkiawb/i5NYOvaBYlEeeB8x7t6WQ0Q3q7+wJUJ6w2FszRr3RMlOm8XHAmAdB04t89/1O/w1cDnyilFU=";
+$LINEDatas['token'] = "YNaUBbZTQCWSKVdEX6h++Ra6Crk88ARJAkcG7aIbIbGzHEXW4kueP66l774Ce9ONGl/V2JefnJ3+kxD95ZeWeNPUxhGbb4Z+sd7MyMwNlOrqRO7nd7fs1m1Umct4GXFaCrna3nHu02PDpmrbclCg8AdB04t89/1O/w1cDnyilFU=";
 $results = sentMessage($encodeJson,$LINEDatas);
 
 // Parse JSON
